@@ -16,6 +16,7 @@
 })();
 
 (function(){
+    'use strict';
     function RouteHelperProvider(APP_REQUIRES) {
         return {
             path,
@@ -29,7 +30,7 @@
         }
 
         function resolveFor(){
-
+            let _args = Array.prototype.slice.call(arguments);
         }
     }
     RouteHelperProvider.$inject = ['APP_REQUIRES'];
